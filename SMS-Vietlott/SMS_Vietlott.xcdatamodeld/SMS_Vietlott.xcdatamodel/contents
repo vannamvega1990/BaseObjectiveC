@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Tickets" representedClassName="Tickets" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="id_ky_quay" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="numbers" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="type_ticket" optional="YES" attributeType="String"/>
+        <attribute name="type_vietlott" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Tickets" positionX="-63" positionY="-18" width="128" height="148"/>
+    </elements>
+</model>

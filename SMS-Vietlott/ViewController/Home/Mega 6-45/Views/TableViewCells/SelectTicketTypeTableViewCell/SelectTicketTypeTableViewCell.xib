@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectTicketTypeTableViewCell" rowHeight="51" id="KGk-i7-Jjw" customClass="SelectTicketTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOD-sg-oQ8">
+                        <rect key="frame" x="0.0" y="0.0" width="369" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-bR-3Fw">
+                                <rect key="frame" x="16" y="11.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_radio_selected" translatesAutoresizingMaskIntoConstraints="NO" id="fvD-R0-fvi">
+                                <rect key="frame" x="333" y="8" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8ny-vi-kbt"/>
+                                    <constraint firstAttribute="width" constant="28" id="SeN-RX-VxQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h14-zB-atg" userLabel="line">
+                                <rect key="frame" x="8" y="43" width="353" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yYT-5X-hQw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fvD-R0-fvi" firstAttribute="top" secondItem="mOD-sg-oQ8" secondAttribute="top" constant="8" id="6Jc-Cx-ICs"/>
+                            <constraint firstAttribute="trailing" secondItem="h14-zB-atg" secondAttribute="trailing" constant="8" id="A41-jL-o3Z"/>
+                            <constraint firstItem="lmj-bR-3Fw" firstAttribute="leading" secondItem="mOD-sg-oQ8" secondAttribute="leading" constant="16" id="Lw1-xj-1Vu"/>
+                            <constraint firstItem="lmj-bR-3Fw" firstAttribute="centerY" secondItem="fvD-R0-fvi" secondAttribute="centerY" id="Tt3-2R-VJF"/>
+                            <constraint firstItem="h14-zB-atg" firstAttribute="leading" secondItem="mOD-sg-oQ8" secondAttribute="leading" constant="8" id="iJS-oI-LDE"/>
+                            <constraint firstAttribute="bottom" secondItem="h14-zB-atg" secondAttribute="bottom" id="pgW-gA-WaI"/>
+                            <constraint firstAttribute="bottom" secondItem="fvD-R0-fvi" secondAttribute="bottom" constant="8" id="qM1-rX-YcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fvD-R0-fvi" secondAttribute="trailing" constant="8" id="qpg-uW-nhI"/>
+                            <constraint firstItem="fvD-R0-fvi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lmj-bR-3Fw" secondAttribute="trailing" constant="8" id="vGq-Fb-jj4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mOD-sg-oQ8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0bp-xa-Qq7"/>
+                    <constraint firstAttribute="trailing" secondItem="mOD-sg-oQ8" secondAttribute="trailing" id="S0I-YP-0D4"/>
+                    <constraint firstItem="mOD-sg-oQ8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xbb-wG-9MB"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mOD-sg-oQ8" secondAttribute="bottom" id="cK3-IO-eu3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imgRadio" destination="fvD-R0-fvi" id="r1k-ec-B5h"/>
+                <outlet property="lblContent" destination="lmj-bR-3Fw" id="AB8-Xa-8YM"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_radio_selected" width="24" height="24"/>
+    </resources>
+</document>

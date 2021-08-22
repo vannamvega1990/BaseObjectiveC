@@ -1,0 +1,30 @@
+//
+//  CreateMax3dFavoriteNumberViewController.h
+//  SMS-Vietlott
+//
+//  Created by HuCuBi on 5/29/20.
+//  Copyright © 2020 HuCuBi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "SelectTypePlayViewController.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CreateMax3dFavoriteNumberViewController : BaseViewController<SelectTypePlayViewControllerDelegate>
+
+@property NSDictionary *dictEdit;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *arrayNumberOne;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *arrayNumberTwo;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *arrayNumberThree;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *arrayBtnChonViTri;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelCachChoi;
+@property (weak, nonatomic) IBOutlet UIView *viewChonViTriOm;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightViewChonViTriOm;
+
+@end
+
+NS_ASSUME_NONNULL_END

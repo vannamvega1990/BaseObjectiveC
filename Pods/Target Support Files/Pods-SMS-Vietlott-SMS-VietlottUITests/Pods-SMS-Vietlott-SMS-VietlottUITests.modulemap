@@ -1,0 +1,6 @@
+framework module Pods_SMS_Vietlott_SMS_VietlottUITests {
+  umbrella header "Pods-SMS-Vietlott-SMS-VietlottUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

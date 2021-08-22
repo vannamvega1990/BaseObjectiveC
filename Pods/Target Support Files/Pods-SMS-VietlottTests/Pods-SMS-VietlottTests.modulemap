@@ -1,0 +1,6 @@
+framework module Pods_SMS_VietlottTests {
+  umbrella header "Pods-SMS-VietlottTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
